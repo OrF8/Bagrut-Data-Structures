@@ -1,7 +1,7 @@
 using System;
 using System.Text;
 
-public class Queue<T> where T : class
+public class Queue<T>
 {
     private Node<T> head;
     private Node<T> end;
