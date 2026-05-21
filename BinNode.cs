@@ -7,7 +7,7 @@ public class BinNode<T>
     private BinNode<T> left;
 
     // Constructor for a BinNode object.
-    public BinNode(T value, BinNode<T> right, BinNode<T> left)
+    public BinNode(T value, BinNode<T> left, BinNode<T> right)
     {
         this.value = value;
         this.right = right;
