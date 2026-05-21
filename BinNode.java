@@ -35,7 +35,7 @@ public class BinNode<T> {
      * @param right Right child of the node.
      * @param left Left child of the node.
      */
-    public BinNode(T value, BinNode<T> right, BinNode<T> left) {
+    public BinNode(T value, BinNode<T> left, BinNode<T> right) {
         this.value = value;
         this.right = right;
         this.left = left;
