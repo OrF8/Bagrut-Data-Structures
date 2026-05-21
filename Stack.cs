@@ -17,14 +17,14 @@ public class Stack<T>
 
     public T Pop()
     {
-        T returns = this.head.Value;
-        this.head = head.Next;
+        T returns = this.head.GetValue();
+        this.head = head.GetNext();
         return returns;
     }
 
     public T Top()
     {
-        return this.head.Value;
+        return this.head.GetValue();
     }
 
     public bool IsEmpty()
@@ -39,16 +39,16 @@ public class Stack<T>
 
         if (runner != null)
         {
-            str.Append(runner.Value);
-            runner = runner.Next;
+            str.Append(runner.GetValue());
+            runner = runner.GetNext();
         }
 
         while (runner != null)
         {
-            str.Append(", ").Append(runner.Value);
-            runner = runner.Next;
+            str.Append(", ").Append(runner.GetValue());
+            runner = runner.GetNext();
         }
 
-        return str + "]";
+        return str.ToString() + "]";
     }
 }
