@@ -28,15 +28,18 @@ public class Queue<T>
 
     public T Remove()
     {
-        if (head == null) return null;
         T temp = head.GetValue();
         head = head.GetNext();
+
+        if (head == null)
+            end = null;
+        
         return temp;
     }
 
     public T Head()
     {
-        return head?.GetValue();
+        return head.GetValue();
     }
 
     public bool IsEmpty()
